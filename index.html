@@ -2,27 +2,32 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Fullscreen YouTube Video</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Full Screen Image</title>
     <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
       html,
       body {
-        margin: 0;
         height: 100%;
-        background: black;
+        width: 100%;
       }
-      iframe {
-        width: 100vw;
+
+      .fullscreen-image {
+        background-image: url("s.webp"); /* Replace with your image path */
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
         height: 100vh;
-        border: none;
+        width: 100vw;
       }
     </style>
   </head>
   <body>
-    <iframe
-      src="https://vlipsy.com/clips/hElgqOJl"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen
-    >
-    </iframe>
+    <div class="fullscreen-image"></div>
   </body>
 </html>
